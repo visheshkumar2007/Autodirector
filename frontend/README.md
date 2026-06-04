@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 📖 About The Project
 
-## Getting Started
+Most aspiring storytellers and creators have compelling ideas but struggle to translate them into structured, visually rich narratives. The Auto-Director is an AI-powered system that solves this by transforming a simple single-line seed idea into a fully structured, visually interpretable 3-act cinematic storyboard.
 
-First, run the development server:
+Instead of plain text or tables, the user receives their storyboard in an immersive **Vertical Cinematic Feed**, complete with generated imagery, scene breakdowns, and even voiceover capabilities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤖 The Multi-Agent Pipeline
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The backend simulates a professional Hollywood production team using a multi-agent AI pipeline:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Agent 1: The Screenwriter:** Expands the initial seed idea into a structured 3-Act narrative (Setup, Conflict, Resolution).
+* **Agent 2: The Cinematographer:** Breaks down each Act into exactly 3 Scenes, and each Scene into exactly 3 Shots, detailing specific camera angles and rich visual prompts.
+* **Agent 3: The Visual Artist:** Utilizes Pollinations Flux AI to instantly generate a visual representation for every single shot based on the Cinematographer's descriptions.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Zero-Friction Input:** Type a single sentence, select a genre, and let the AI do the heavy lifting.
+* **Dynamic Image Generation:** Seamlessly fetches AI-generated visuals for all 27 storyboard shots.
+* **Cinematography Logic:** Automatically assigns accurate camera angles (e.g., Wide Shot, Close-up) to fit the narrative.
+* **Interactive Voiceover:** Built-in Web Speech API integration reads out the visual prompts like a director pitching the scene.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Frontend:** Next.js (React), TypeScript, CSS
+* **Backend:** Python, FastAPI, Uvicorn
+* **LLM Engine:** Llama-3.3-70b-versatile via Groq API (for blazing-fast JSON schema generation)
+* **Image Generation:** Pollinations Flux AI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+---
+
+## 🎯 Use Cases
+
+* Film pre-production planning
+* Short film ideation
+* Storyboarding
+* Ad film planning
+* YouTube video planning
+* Creative writing
+
+---
+
+
+---
+
+**Built by Vishesh Kumar**
+
